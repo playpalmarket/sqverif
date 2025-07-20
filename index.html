@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewa Squad Verif MLBB | PlayPal Market</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #666;
+      --border: #dcdcdc;
+      --accent: #0D6EFD; /* Warna hover biru */
+      --font: 'Segoe UI', Roboto, system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f7f8;
+      color: var(--fg);
+      font-family: var(--font);
+      font-size: 15px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 15px 10px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .section h2 {
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      font-weight: 500;
+      color: var(--muted);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+    }
+
+    /* Grid untuk Pilihan Durasi */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .item:hover {
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+
+    .amount {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--fg);
+    }
+
+    .price {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    
+    /* Styling untuk Daftar Squad */
+    .squad-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+
+    .squad-item {
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+
+    .squad-tag {
+        font-weight: 700;
+        color: var(--accent);
+    }
+
+    .squad-name {
+        color: var(--muted);
+        font-size: 0.9em;
+    }
+    
+    .note {
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    footer {
+      padding: 20px 15px 40px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.4rem; }
+      .section h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sewa Squad Verif MLBB</h1>
+  </header>
+  
+  <section class="section">
+    <h2>Pilihan Squad Tersedia</h2>
+    <div class="squad-list">
+        <div class="squad-item">
+            <span class="squad-tag">TLID</span> - <span class="squad-name">TEAM LIQUID IDN.</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">#1</span> - <span class="squad-name">MLBB INFLUENCER</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">FNOC</span> - <span class="squad-name">FNATIC ONIC III</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">KOL</span> - <span class="squad-name">INFLUENCER MLBB.</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">496</span> - <span class="squad-name">SWEET BLASPHEMY</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">EVOS</span> - <span class="squad-name">EVOS ACADEMY.</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">RRQ</span> - <span class="squad-name">RRQ ACADEMIA.</span>
+        </div>
+        <div class="squad-item">
+            <span class="squad-tag">SRG</span> - <span class="squad-name">SELANGOR RED GN</span>
+        </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Pilih Durasi Sewa</h2>
+    <div class="grid">
+        <div class="item"><div class="amount">7 Hari</div><div class="price">Rp 30.000</div></div>
+        <div class="item"><div class="amount">30 Hari</div><div class="price">Rp 60.000</div></div>
+        <div class="item"><div class="amount">90 Hari</div><div class="price">Rp 160.000</div></div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <h2>Cara Pemesanan</h2>
+    <div class="note">
+        Klik pada durasi sewa yang Anda inginkan, lalu lengkapi data yang ada di chat WhatsApp.
+    </div>
+  </section>
+
+  <footer>
+    PlayPal Market &copy; 2025
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const adminNumber = '6285877001999';
+      const items = document.querySelectorAll('.item');
+
+      items.forEach(item => {
+        item.addEventListener('click', function () {
+          const amountEl = this.querySelector('.amount');
+          if (!amountEl) return;
+
+          const duration = amountEl.textContent.trim();
+          
+          // Template pesan baru sesuai permintaan
+          const messageTemplate = `UserID : \nNickname : \nRequest Nama Squad : \nDurasi : ${duration}`;
+
+          const encodedMessage = encodeURIComponent(messageTemplate);
+          const whatsappURL = `https://wa.me/${adminNumber}?text=${encodedMessage}`;
+
+          window.open(whatsappURL, '_blank');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
